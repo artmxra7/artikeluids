@@ -18,6 +18,8 @@
 /* General
 /*-------------------------------------------------------*/
 
+
+
 .owl-item.active.center{
   -webkit-backface-visibility:hidden;
   -ms-backface-visibility:hidden;
@@ -483,7 +485,7 @@ hr {
   text-decoration: none;
   text-align: center;
   border: 0;
-  border-radius: 2px;
+  border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   -webkit-transition: all 0.2s ease-in-out;
@@ -523,11 +525,12 @@ hr {
   .btn-sm, .btn-sm.btn-button {
     font-size: 11px;
     padding: 0 20px;
-    line-height: 28px; }
+    line-height: 28px;
+    border-radius: 0.21rem;}
   .btn-sm.btn-button {
     height: 30px; }
   .btn-color {
-    background-color: #fc6d41; }
+    background-color: #39599f; }
     .btn-color:hover {
       opacity: .92; }
   .btn-dark {
@@ -2721,13 +2724,18 @@ list-style: none;
 .switch-field label:hover{cursor:pointer;color:#e74e84}
 
 
-#results{padding-top:30px;
-  color:#fff;background:#3f4079}
-  #results.is_stuck{z-index:99}
-  #results h4{color:#fff;margin:10px 0 0;font-size:18px;font-size:1.125rem}
-  @media (max-width:767px){
-    #results{padding:10px 0}
-    #results h4{display:none}}
+#results{
+  padding-top:30px;
+  color:#fff;
+  background:#3f4079}
+#results.is_stuck{z-index:99}
+#results h4{
+  color:#fff;margin:10px 0 0;
+  font-size:18px;
+  font-size:1.125rem}
+@media (max-width:767px){
+
+#results h4{display:none}}
 
 
 .entry-navigation {
@@ -2946,8 +2954,9 @@ list-style: none;
   @media only screen and (min-width: 992px) {
     .nav {
       height: 50px; }
-      .nav .nav.sticky {
-        height: 50px; } }
+    .nav .nav.sticky {
+      height: 50px; } }
+
   .nav__menu, .nav__dropdown-menu {
     list-style: none; }
   .nav__menu {
@@ -2972,9 +2981,8 @@ list-style: none;
 
       display: block;
       position: relative;
-      margin-left: 1.5em;
-     
-      line-height: 50px; }
+      margin-left: 1.5em;     
+      line-height: 35px; }
       .nav__menu > li > a:after {
         content: '';
         display: block;
@@ -2996,6 +3004,11 @@ list-style: none;
   .nav__dropdown-menu > li > a,
   .nav__dropdown-submenu > .nav__dropdown-menu > li > a {
     font-family: "Open Sans", sans-serif; }
+
+    /* // NAV MENU LOGIN */
+
+
+
 
     .ddmenu{
     font-size: 10px;
